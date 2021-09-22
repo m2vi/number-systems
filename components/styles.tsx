@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 100vw;
   height: 100vh;
   display: grid;
   place-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 `;
 
 export const Inner = styled.div`
@@ -38,7 +37,7 @@ export const Mainput = styled.input`
   width: 100%;
 
   &::placeholder {
-    color: #8b93a7;
+    color: var(--color-primary-300);
   }
 
   &:disabled {
@@ -52,6 +51,7 @@ export const Digiput = styled.button`
   height: 44px;
   display: grid;
   place-items: center;
+  color: var(--color-primary-300);
 `;
 
 export const Buttput = styled.button`
@@ -63,5 +63,15 @@ export const Buttput = styled.button`
 
   &:active {
     transform: translateY(-1px);
+  }
+
+  svg {
+    color: var(--color-accent);
+    height: 20px;
+    width: 20px;
+
+    &:hover {
+      color: var(--color-accent-hover);
+    }
   }
 `;

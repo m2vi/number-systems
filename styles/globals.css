@@ -7,12 +7,7 @@
   --color-accent-hover: #51a8ff;
   --color-accent-disabled: #51a8ff;
   --color-accent-glow: hsla(200, 100%, 50%, 0.063);
-  --color-accent-avatar-gradient: linear-gradient(
-    145deg,
-    #0a84ff 0%,
-    #51a8ff 45%,
-    #97c9ff 100%
-  );
+  --color-accent-avatar-gradient: linear-gradient(145deg, #0a84ff 0%, #51a8ff 45%, #97c9ff 100%);
 
   --color-primary-100: hsl(0, 0%, 100%);
   --color-primary-200: hsl(200, 17%, 85%);
@@ -46,11 +41,16 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Inter', 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 *:focus {
   outline: 0 !important;
   box-shadow: none !important;
+}
+* {
+  font-size: 16px;
 }
 
 .select {
@@ -139,4 +139,10 @@ body,
 .dD5d-items::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 0px;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
 }

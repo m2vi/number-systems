@@ -21,6 +21,13 @@ const Home = () => {
     <>
       <Head>
         <title>Number Systems</title>
+        <meta name='title' content='Number Systems' />
+        <meta name='description' content='A page that converts numbers into different number systems. ' />
+        <meta name='keywords' content='numeral systems, number systems, hex, binary, octal, decimal' />
+        <meta name='robots' content='index, follow' />
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='language' content='English' />
+        <meta name='author' content='m2vi' />
         <Favicon />
       </Head>
       <Wrapper>
@@ -28,12 +35,10 @@ const Home = () => {
           {systems.map((key) => {
             return (
               <Wrapput key={key}>
-                <Digiput className='text-primary-300' title='Digits'>
-                  {Systems[key]}
-                </Digiput>
+                <Digiput title='Digits'>{Systems[key]}</Digiput>
                 <Mainput title={'Numeral System'} placeholder={capitalize(key)} aria-label={key} onChange={handleChange} value={to(key)} />
                 <Buttput title='Copy to Clipboard' onClick={() => copy(to(key))}>
-                  <IoCopyOutline className='text-accent hover:text-accent-hover w-4 h-4' />
+                  <IoCopyOutline />
                 </Buttput>
               </Wrapput>
             );
