@@ -5,7 +5,7 @@ import { capitalize, copy } from '../utils/text';
 import { IoCopyOutline } from 'react-icons/io5';
 
 const Main = ({ systems }: { systems: string[] }) => {
-  const [bin, setBin] = useState('');
+  const [bin, setBin] = useState('420');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const binary = num(e.target.value).from(Systems[e.target.ariaLabel]).to(Systems.binary);

@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
+export const WrapperAll = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+`;
+
 export const Wrapper = styled.div`
   height: 100vh;
-  display: grid;
-  place-items: center;
-  margin: 50px 10px 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Inner = styled.main`
@@ -14,6 +21,7 @@ export const Inner = styled.main`
   justify-content: start;
   width: 100%;
   max-width: 560px;
+  padding: 25px 10px;
 `;
 
 export const Wrapput = styled.div`
@@ -48,8 +56,9 @@ export const Digiput = styled.button`
   background: none;
   aspect-ratio: 1 / 1;
   height: 44px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-primary-300);
 `;
 
