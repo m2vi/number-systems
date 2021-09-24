@@ -4,11 +4,10 @@ export const Wrapper = styled.div`
   height: 100vh;
   display: grid;
   place-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 50px 10px 50px 10px;
 `;
 
-export const Inner = styled.div`
+export const Inner = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
